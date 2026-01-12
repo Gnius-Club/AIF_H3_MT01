@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 1 - 3ro Preparatotia.</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-P3-TM1</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 1 - 3ro Preparatotia.</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 1 - 3o de Preparatoria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,256 +38,401 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 1 - 3ro Preparatotia.</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de aprendizaje:</strong>
-                                    <p>Al final de la sesión, los estudiantes podrán:</p>
-<ul>
-<li>Definir las tres responsabilidades clave del Director de Proyecto de IA: orquestador de herramientas, auditor de calidad y estratega.</li>
-<li>Articular la importancia del rol "Human-in-the-Loop" para garantizar el control ético y la calidad en un proyecto.</li>
-<li>Redactar un manifiesto personal que resuma su visión y principios como futuros directores de proyectos de IA.</li>
-<li><strong>Objetivo general de la sesión:</strong> Que los estudiantes comprendan el cambio de mentalidad de "constructor" a "director", definiendo las responsabilidades estratégicas, técnicas y éticas que este nuevo rol implica.</li>
-</ul>
-                                    <strong>Secuencia Didáctica:</strong>
-                                    <ul>
-                                        <li><strong>Actividad 1:</strong> Saludo Interactivo con IA — 3 min</li>
-                                        <li><strong>Actividad 2:</strong> “I Can Statement” + Desafío — 5-7 min</li>
-                                        <li><strong>Actividad 3:</strong> AI GYM — 10-12 min</li>
-                                        <li><strong>Actividad 4:</strong> Brain Spark — 17-20 min</li>
-                                        <li><strong>Actividad 5:</strong> GNIUS STORM — 5 min</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un "Manifiesto del Director de IA" (párrafo) acompañado de una manifestación creativa (ej. portada de manual, post para red social, jingle).</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector e internet estable.</li>
-                                        <li>Acceso a LLM (Xolo/Gemini).</li>
-                                        <li>Herramientas de creatividad digital (ej. Canva, editor de texto).</li>
-                                        <li>Presentación (11 diapositivas).</li>
-                                    </ul>
-                                    <strong>Preparación Previa:</strong>
-                                    <ol>
-                                        <li><strong>Verificar Criterios de Calidad:</strong>
-                                            <ul>
-                                                <li>Claridad de los principios del Director de IA.</li>
-                                                <li>Coherencia del manifiesto con los roles de orquestador, auditor y estratega.</li>
-                                                <li>Originalidad y relevancia de la manifestación creativa.</li>
-                                                <li>Integración explícita del concepto "humano en el bucle".</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Preparar Ejemplo:</strong> Tener listo un ejemplo simple de un manifiesto y su manifestación creativa para inspirar a los estudiantes.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> identificar roles del director de IA y mapear herramientas usando WebWave y GitHub para dirigir proyectos y comprender el Human-in-the-Loop, el control ético y la responsabilidad.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Ayúdame a elaborar mi Manifiesto del Director/a de IA. Define conmigo las tres responsabilidades clave del rol (orquestador de herramientas, auditor de calidad y estratega) y explícame cómo se integra el humano en el bucle para mantener control, seguridad y ética. Con esa base, guíame para redactar un párrafo claro que exprese mis principios y cómo dirigiré la “orquesta” de herramientas en un proyecto real.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Human-in-the-Loop: Es asegurar que una persona siempre supervise y tome las decisiones finales en procesos de IA para mantener la calidad y la ética.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar plataformas digitales para orquestar y documentar principios de dirección de inteligencia artificial.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes niveles de intervención humana para ver cómo cambia la calidad y seguridad del proyecto.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Computadora o laptop (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a WebWave (https://webwave.me/), JDoodle, GitHub y LLMs (ChatGPT, Claude, Gemini)</label>
+                        <label><input type="checkbox"> Libreta de apuntes o documento digital para el Manifiesto</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa herramientas de gestión, diseño web y lógica de sistemas</label>
+                        <label><input type="checkbox"> 📋 No se requieren extensiones; usar accesos directos de las plataformas</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Cerrar sesiones en plataformas web, proteger contraseñas y tratar con cuidado el equipo de cómputo.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre el rol del Director de IA (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si las plataformas de IA no cargan:</strong> Revisar la conexión a internet y refrescar el navegador. Probar en modo incógnito si el error persiste.</li>
+<li><strong>Si GitHub o WebWave presentan errores de guardado:</strong> Verificar que la cuenta esté activa y que se hayan aceptado los términos de servicio.</li>
+<li><strong>Si hay errores en el código o lógica:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo Interactivo con IA ⏰ 3 minutos</h2>
-                <p>Iniciamos la misión estableciendo el cambio de rol y activando a nuestro copiloto IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y foco ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Presenta el tema y el cambio de mentalidad.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Equipo: Hoy comenzamos una nueva etapa en su formación. Dejamos de ser solo constructores para convertirnos en <strong>directores de proyectos de IA</strong>. Su rol es ahora <strong>orquestar herramientas</strong>, <strong>auditar la calidad</strong> y tomar <strong>decisiones estratégicas</strong>. Esta misión es fundamental para establecer su visión como líderes en el desarrollo aumentado por IA.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación con Xolo ⏰ 2 minutos</h3>
-                            <p>Cada estudiante inicia su sesión con Xolo para alinear el foco de la misión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Como es nuestra rutina, activen a Xolo con su perfil e intereses. Confirmen que están en la 'Misión M01: El Manifiesto del Director de IA' y pídanle que su foco hoy sea ayudarles a definir los principios de un director de IA. Por ejemplo: <strong>'Hola Xolo, soy [Nombre]. Mis intereses son el diseño y la estrategia. Estoy listo para la Misión M01 sobre el rol del Director de IA.'</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "Hoy tomarán la batuta para dirigir la orquesta de la Inteligencia Artificial.".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre el Manifiesto del Director de IA.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A orquestar herramientas de IA para que el resultado final sea ético y de alta calidad.</p>
+                        <p><strong>Aplicación real:</strong> Los líderes tecnológicos en empresas como OpenAI o Google usan estos principios para asegurar que la IA ayude a las personas sin salirse de control.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: “I Can Statement” + Desafío ⏰ 5-7 minutos</h2>
-                <p>Alinear expectativas y definir el reto práctico de la sesión.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Presenta el reto ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) Describe el reto del "Manifiesto" y la meta observable.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El reto es crear su propio <strong>"Manifiesto del Director de IA"</strong>, un documento que encapsule su visión y principios. Este manifiesto no es solo teoría; lo manifestarán creativamente para demostrar su comprensión del rol de <strong>orquestador</strong>, <strong>auditor</strong> y <strong>tomador de decisiones estratégicas</strong>. Evaluaremos la claridad de sus principios y la coherencia de su manifestación.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Escribe tu “I Can” ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Cada estudiante redacta su objetivo de aprendizaje personal.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica las responsabilidades de orquestador, auditor y estratega.</li>
+                            <li>Introduce el concepto de Human-in-the-Loop y su importancia ética.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a actuar como director de una orquesta de herramientas de IA.</li>
+                            <li>Aprender sobre la integración del humano en el bucle de control.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Formulen su “Puedo…” en 1 frase: acción + criterio + resultado. Por ejemplo: “Puedo definir mi <strong>manifiesto del Director de IA</strong> usando los principios de <strong>orquestación</strong> y <strong>auditoría</strong> para guiar futuros proyectos.”</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a ser un Director de IA usando el criterio humano y la ética.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Bienvenidos, Directores! Hoy vamos a cambiar nuestra perspectiva. No solo vamos a usar la IA, vamos a dirigirla. Abran su chat con XOLO y simplemente salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará cómo pasar de ser alguien que solo hace preguntas a ser el estratega que audita y orquesta herramientas. Recuerden que el control siempre es suyo. ¡Pregúntenle todo sobre el Human-in-the-Loop!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 10-12 minutos</h2>
-                <p>Formalizar el marco conceptual del Director de IA y el rol del "humano en el bucle".</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Marco del día ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Introduce el cambio de mentalidad y las responsabilidades clave.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El marco de hoy es un cambio de paradigma: de ejecutar instrucciones a <strong>dirigir una orquesta de IA</strong>. No somos meros usuarios de herramientas; somos <strong>orquestadores</strong>, <strong>auditores de calidad</strong> y <strong>tomadores de decisiones estratégicas</strong>. Un error común es ceder el control total a la IA. Recuerden: el <strong>humano siempre debe estar en el bucle</strong>, aportando juicio, ética y creatividad.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Mini-demostración ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Modela cómo un director abordaría un problema.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>“Xolo, ayúdame a elaborar mi Manifiesto del Director/a de IA. Define conmigo las responsabilidades clave del rol y explícame cómo se integra el humano en el bucle para mantener control, seguridad y ética. Con esa base, guíame para redactar un párrafo claro que exprese mis principios y cómo dirigiré la ‘orquesta’ de herramientas en un proyecto real.”</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los computadoras conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Check rápido ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Verifica comprensión con dos preguntas clave.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a definir una vibe y principios accionables para el manifiesto.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para su manifiesto de director.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Documentar su manifiesto en GitHub o WebWave y verificar su claridad.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a diseñar mi Manifiesto del Director/a de IA con Vibe Coding: define una vibe (propósito + impacto + límites), y tradúcela en 3 principios accionables (qué haré / qué no haré / cómo validaré calidad). Ejecuta: redacta mi párrafo final y elige un formato creativo (portada, post profesional o jingle) indicando exactamente qué debo producir hoy."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Pregunta 1: ¿Cuál es la diferencia principal entre un "constructor" y un <strong>"director de IA"</strong>? Pregunta 2: ¿Por qué es importante que el <strong>humano permanezca en el bucle</strong> de un sistema de IA?</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿Tu manifiesto cubre los tres roles (orquestador, auditor, estratega)?</li>
+                            <li>¿Qué sucede si una herramienta genera un sesgo y tú no estás en el bucle?</li>
+                            <li>¿Funciona igual tu manifiesto para un proyecto de código vs uno de diseño?</li>
+                            <li>¿Cómo garantiza tu manifiesto que el 'Human-in-the-Loop' no sea solo un espectador, sino un auditor real?</li>
+                            <li>¿De qué manera tus principios éticos limitan el uso de la IA en situaciones críticas?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es momento de poner su sello personal! Vamos a crear el Manifiesto del Director de IA. Usen a XOLO para definir su 'Vibe': ¿qué impacto quieren causar? ¿cuáles son sus límites? Pídanle que los ayude a redactar ese párrafo potente que defina cómo van a validar la calidad de lo que la IA produzca. Por ejemplo, podrían diseñar un post profesional en GitHub que sirva como su declaración de principios. Sigan las preguntas de experimentación para asegurarse de que su manifiesto sea sólido. Si se traban o algo no suena bien, pregúntenle a XOLO, él los ayudará a depurar su visión. ¡A crear!</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya definí mis principios básicos. ¿Puedes ayudarme a redactar un protocolo de crisis para cuando la IA no cumpla con mis estándares éticos?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Brain Spark ⏰ 17-20 minutos</h2>
-                <p>Fase de producción del manifiesto y su manifestación creativa, con el apoyo activo de Xolo.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Producción y Consulta con IA ⏰ 12 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Los estudiantes comienzan a redactar su manifiesto y a idear su manifestación creativa.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Es hora de producir. Comiencen a escribir su manifiesto. Mientras lo hacen, usen a Xolo como su <strong>consultor estratégico</strong>. Pídanle feedback: 'Xolo, este es un borrador de mi <strong>manifiesto</strong>. ¿Refleja claramente el rol de un <strong>auditor</strong>? ¿Cómo podría fortalecer el principio del <strong>humano en el bucle</strong>?'. Usen esta conversación para refinar sus ideas.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Iteración ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Revisa y refina el trabajo basado en el feedback de la IA y los criterios.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Antes de cerrar: valida que tu <strong>manifiesto</strong> sea conciso y que su <strong>manifestación creativa</strong> sea impactante. Asegúrate de que cada principio esté alineado con el rol de <strong>director</strong> y que el valor del <strong>humano en el bucle</strong> sea evidente.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Evidencia ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Prepara el entregable final para compartir.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué responsabilidades de su manifiesto aplicará en sus proyectos.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué parte de ser Director de IA te parece más desafante? ¿Qué te sorprendió de tu propio manifiesto?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Preparen su entrega final. Nombren su archivo: M01_Manifiesto_[TuNombre]. Debe incluir el párrafo de su <strong>manifiesto</strong> y el archivo o enlace a su <strong>manifestación creativa</strong>. Asegúrense de que sea fácilmente accesible.</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi manifiesto define mi rol como auditor de calidad. Me sorprendió que establecer límites claros hace que la IA sea mucho más útil."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: GNIUS STORM ⏰ 5 minutos</h2>
-                <p>Exhibir resultados y cerrar con una síntesis accionable.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Showcase relámpago ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 11) 2–3 estudiantes presentan su manifiesto y manifestación creativa.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Enfoca tu presentación en la decisión clave que tomaste al definir un principio de tu <strong>manifiesto</strong>, el criterio profesional que lo respalda y cómo tu <strong>manifestación creativa</strong> lo ilustra.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Cierre ejecutivo ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 12) Síntesis del aprendizaje clave y siguientes pasos.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Síntesis: El aprendizaje clave de hoy es la transición de mentalidad de constructor a <strong>director de IA</strong>. El criterio que más impactó es la necesidad de ser un <strong>auditor constante de la calidad</strong> de la IA. Como siguiente paso, apliquen estos principios en la forma en que abordan cualquier desafío tecnológico, incluso fuera de este curso.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
@@ -297,4 +440,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
